@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "D:\\Cod\\GitRepos\\KTCM\\KTCM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{781492CA-FBE0-4320-BAFD-D53938897CCE}|KTCM\\KTCM.csproj|d:\\cod\\gitrepos\\ktcm\\ktcm\\ktcm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{781492CA-FBE0-4320-BAFD-D53938897CCE}|KTCM\\KTCM.csproj|solutionrelative:ktcm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{10CFB21D-1812-DEFF-F3CF-375D5B51A293}|KTCM\\KTCM.csproj|d:\\cod\\gitrepos\\ktcm\\ktcm\\ktcm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10CFB21D-1812-DEFF-F3CF-375D5B51A293}|KTCM\\KTCM.csproj|solutionrelative:ktcm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10CFB21D-1812-DEFF-F3CF-375D5B51A293}|KTCM\\KTCM.csproj|d:\\cod\\gitrepos\\ktcm\\ktcm\\ktcm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{10CFB21D-1812-DEFF-F3CF-375D5B51A293}|KTCM\\KTCM.csproj|solutionrelative:ktcm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,6 +47,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Cod\\GitRepos\\KTCM\\KTCM\\KTCM\\Form1.cs",
+              "RelativeDocumentMoniker": "KTCM\\Form1.cs",
+              "ToolTip": "D:\\Cod\\GitRepos\\KTCM\\KTCM\\KTCM\\Form1.cs*",
+              "RelativeToolTip": "KTCM\\Form1.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T19:02:27.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "D:\\Cod\\GitRepos\\KTCM\\KTCM\\KTCM\\Form1.cs",
               "RelativeDocumentMoniker": "KTCM\\Form1.cs",
