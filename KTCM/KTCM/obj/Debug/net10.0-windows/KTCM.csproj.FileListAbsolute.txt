@@ -1,0 +1,16 @@
+D:\Cod\GitRepos\KTCM\KTCM\KTCM\bin\Debug\net10.0-windows\KTCM.exe
+D:\Cod\GitRepos\KTCM\KTCM\KTCM\bin\Debug\net10.0-windows\KTCM.deps.json
+D:\Cod\GitRepos\KTCM\KTCM\KTCM\bin\Debug\net10.0-windows\KTCM.runtimeconfig.json
+D:\Cod\GitRepos\KTCM\KTCM\KTCM\bin\Debug\net10.0-windows\KTCM.dll
+D:\Cod\GitRepos\KTCM\KTCM\KTCM\bin\Debug\net10.0-windows\KTCM.pdb
+D:\Cod\GitRepos\KTCM\KTCM\KTCM\obj\Debug\net10.0-windows\KTCM.Form1.resources
+D:\Cod\GitRepos\KTCM\KTCM\KTCM\obj\Debug\net10.0-windows\KTCM.csproj.GenerateResource.cache
+D:\Cod\GitRepos\KTCM\KTCM\KTCM\obj\Debug\net10.0-windows\KTCM.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cod\GitRepos\KTCM\KTCM\KTCM\obj\Debug\net10.0-windows\KTCM.AssemblyInfoInputs.cache
+D:\Cod\GitRepos\KTCM\KTCM\KTCM\obj\Debug\net10.0-windows\KTCM.AssemblyInfo.cs
+D:\Cod\GitRepos\KTCM\KTCM\KTCM\obj\Debug\net10.0-windows\KTCM.csproj.CoreCompileInputs.cache
+D:\Cod\GitRepos\KTCM\KTCM\KTCM\obj\Debug\net10.0-windows\KTCM.dll
+D:\Cod\GitRepos\KTCM\KTCM\KTCM\obj\Debug\net10.0-windows\refint\KTCM.dll
+D:\Cod\GitRepos\KTCM\KTCM\KTCM\obj\Debug\net10.0-windows\KTCM.pdb
+D:\Cod\GitRepos\KTCM\KTCM\KTCM\obj\Debug\net10.0-windows\KTCM.genruntimeconfig.cache
+D:\Cod\GitRepos\KTCM\KTCM\KTCM\obj\Debug\net10.0-windows\ref\KTCM.dll
