@@ -1,3 +1,6 @@
+using System.Data;
+using System.Data.SQLite;
+
 namespace KTCM
 {
     public partial class Form1 : Form
@@ -11,9 +14,10 @@ namespace KTCM
             this.DoubleBuffered = true;
 
             this.BackColor = Color.Green;
+
         }
 
-        #region Рисование формы OnPaint Point2D
+        #region drawing on the form OnPaint Point2D
 
         // Определите область рисования
         private System.Drawing.Rectangle PlotArea;
@@ -77,5 +81,69 @@ namespace KTCM
             return aPoint;
         }
         #endregion
+
+        #region database connection method Connection
+        static string connectionString = @"Data Source=ктсм.db;Version=3;";
+        public static void Connection(DataGridView dataGridView, string stringQuery)
+        {
+            using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+                }
+                catch (SQLiteException ex)
+                {
+                    MessageBox.Show($"Ошибка подключения к базе данных SQLite: {ex.Message}");
+                    return; // Выходим из метода, если нет подключения
+                }
+                using (SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter(stringQuery, connection))
+                {
+                    try
+                    {
+                        DataSet dataSet = new DataSet();
+                        dataAdapter.Fill(dataSet);
+
+                        // Настройка DataGridView
+                        dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+                        dataGridView.DataSource = dataSet.Tables[0];
+                        dataGridView.RowHeadersVisible = false;
+                        //dataGridView.Visible = true;
+                    }
+                    catch (SQLiteException ex)
+                    {
+                        // Обработка ошибок при выполнении запроса
+                        MessageBox.Show($"Ошибка выполнения запроса SQLite: {ex.Message}");
+                    }
+                    catch (Exception ex)
+                    {
+                        // Общая обработка других ошибок
+                        MessageBox.Show($"Произошла ошибка: {ex.Message}");
+                    }
+                    finally
+                    {
+                        // Соединение будет закрыто автоматически благодаря using,
+                        // но явный вызов connection.Close() внутри finally, как у вас было,
+                        // не нужен, но и не повредит, если вы решите убрать using.
+                        // В данном случае 'using' гарантирует вызов Dispose(), который закроет соединение.
+                        // connection.Close(); // Необязательно при использовании `using` для connection
+                    }
+                }
+            }
+        }
+        #endregion
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Connection(dataGridView1, "SELECT * FROM шн");
+
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            // Обновить при изменении размера формы
+            this.Resize += (s, args) =>
+            {
+                dataGridView1.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.Fill);
+            };
+        }
     }
 }

@@ -15,3 +15,11 @@ D:\Cod\GitRepos\KTCM\KTCM\KTCM\obj\Debug\net10.0-windows\KTCM.pdb
 D:\Cod\GitRepos\KTCM\KTCM\KTCM\obj\Debug\net10.0-windows\KTCM.genruntimeconfig.cache
 D:\Cod\GitRepos\KTCM\KTCM\KTCM\obj\Debug\net10.0-windows\ref\KTCM.dll
 D:\Cod\GitRepos\KTCM\KTCM\KTCM\obj\Debug\net10.0-windows\KTCM.sourcelink.json
+D:\Cod\GitRepos\KTCM\KTCM\KTCM\obj\Debug\net10.0-windows\KTCM.Properties.Resources.resources
+D:\Cod\GitRepos\KTCM\KTCM\KTCM\bin\Debug\net10.0-windows\System.Data.SQLite.dll
+D:\Cod\GitRepos\KTCM\KTCM\KTCM\obj\Debug\net10.0-windows\KTCM.csproj.AssemblyReference.cache
+D:\Cod\GitRepos\KTCM\KTCM\KTCM\obj\Debug\net10.0-windows\KTCM.csproj.Up2Date
+D:\Cod\GitRepos\KTCM\KTCM\KTCM\bin\Debug\net10.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+D:\Cod\GitRepos\KTCM\KTCM\KTCM\bin\Debug\net10.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+D:\Cod\GitRepos\KTCM\KTCM\KTCM\bin\Debug\net10.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+D:\Cod\GitRepos\KTCM\KTCM\KTCM\bin\Debug\net10.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
