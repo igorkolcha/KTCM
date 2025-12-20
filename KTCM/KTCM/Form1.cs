@@ -135,9 +135,11 @@ namespace KTCM
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Connection(dataGridView1, "SELECT * FROM шн");
+            Connection(dataGridView1, "SELECT фамилия FROM шн");
 
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            //dataGridView1.Columns["фамилия"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridView1.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
             // Обновить при изменении размера формы
             this.Resize += (s, args) =>

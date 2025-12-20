@@ -33,8 +33,15 @@
             panel1 = new Panel();
             dataGridView2 = new DataGridView();
             textBox1 = new TextBox();
-            comboBox1 = new ComboBox();
             dataGridView1 = new DataGridView();
+            menuStrip1 = new MenuStrip();
+            toolStripMenuItem1 = new ToolStripMenuItem();
+            toolStripMenuItem2 = new ToolStripMenuItem();
+            toolStripMenuItem3 = new ToolStripMenuItem();
+            toolStripMenuItem4 = new ToolStripMenuItem();
+            toolStripMenuItem5 = new ToolStripMenuItem();
+            toolStripMenuItem6 = new ToolStripMenuItem();
+            toolStripMenuItem7 = new ToolStripMenuItem();
             label1 = new Label();
             button1 = new Button();
             button2 = new Button();
@@ -88,6 +95,7 @@
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -95,43 +103,33 @@
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             panel1.Controls.Add(dataGridView2);
             panel1.Controls.Add(textBox1);
-            panel1.Controls.Add(comboBox1);
             panel1.Controls.Add(dataGridView1);
-            panel1.Location = new Point(5, 22);
+            panel1.Controls.Add(menuStrip1);
+            panel1.Location = new Point(16, 22);
             panel1.Name = "panel1";
-            panel1.Size = new Size(255, 626);
+            panel1.Size = new Size(245, 632);
             panel1.TabIndex = 2;
             // 
             // dataGridView2
             // 
             dataGridView2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(1, 350);
+            dataGridView2.Location = new Point(1, 333);
             dataGridView2.Name = "dataGridView2";
-            dataGridView2.Size = new Size(254, 270);
+            dataGridView2.Size = new Size(244, 295);
             dataGridView2.TabIndex = 4;
             // 
             // textBox1
             // 
             textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             textBox1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox1.Location = new Point(0, 2);
+            textBox1.Location = new Point(0, 0);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(255, 31);
+            textBox1.Size = new Size(245, 31);
             textBox1.TabIndex = 3;
             textBox1.Text = "Исполнители";
-            // 
-            // comboBox1
-            // 
-            comboBox1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" });
-            comboBox1.Location = new Point(0, 323);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(255, 27);
-            comboBox1.TabIndex = 2;
-            comboBox1.Text = "Отчет за месяц";
+            textBox1.TextAlign = HorizontalAlignment.Center;
             // 
             // dataGridView1
             // 
@@ -144,6 +142,7 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.ColumnHeadersVisible = false;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = SystemColors.Window;
             dataGridViewCellStyle2.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
@@ -152,10 +151,67 @@
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
             dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            dataGridView1.Location = new Point(0, 33);
+            dataGridView1.Location = new Point(0, 31);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(255, 289);
+            dataGridView1.Size = new Size(245, 274);
             dataGridView1.TabIndex = 1;
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.AutoSize = false;
+            menuStrip1.Dock = DockStyle.None;
+            menuStrip1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            menuStrip1.ImageScalingSize = new Size(30, 30);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1 });
+            menuStrip1.Location = new Point(1, 303);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(251, 27);
+            menuStrip1.TabIndex = 5;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // toolStripMenuItem1
+            // 
+            toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItem2, toolStripMenuItem3, toolStripMenuItem4, toolStripMenuItem5, toolStripMenuItem6, toolStripMenuItem7 });
+            toolStripMenuItem1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
+            toolStripMenuItem1.Size = new Size(123, 23);
+            toolStripMenuItem1.Text = "Отчет за месяц";
+            // 
+            // toolStripMenuItem2
+            // 
+            toolStripMenuItem2.Name = "toolStripMenuItem2";
+            toolStripMenuItem2.Size = new Size(136, 24);
+            toolStripMenuItem2.Text = "Январь";
+            // 
+            // toolStripMenuItem3
+            // 
+            toolStripMenuItem3.Name = "toolStripMenuItem3";
+            toolStripMenuItem3.Size = new Size(136, 24);
+            toolStripMenuItem3.Text = "Февраль";
+            // 
+            // toolStripMenuItem4
+            // 
+            toolStripMenuItem4.Name = "toolStripMenuItem4";
+            toolStripMenuItem4.Size = new Size(136, 24);
+            toolStripMenuItem4.Text = "Март";
+            // 
+            // toolStripMenuItem5
+            // 
+            toolStripMenuItem5.Name = "toolStripMenuItem5";
+            toolStripMenuItem5.Size = new Size(136, 24);
+            toolStripMenuItem5.Text = "Апрель";
+            // 
+            // toolStripMenuItem6
+            // 
+            toolStripMenuItem6.Name = "toolStripMenuItem6";
+            toolStripMenuItem6.Size = new Size(136, 24);
+            toolStripMenuItem6.Text = "Май";
+            // 
+            // toolStripMenuItem7
+            // 
+            toolStripMenuItem7.Name = "toolStripMenuItem7";
+            toolStripMenuItem7.Size = new Size(136, 24);
+            toolStripMenuItem7.Text = "Июнь";
             // 
             // label1
             // 
@@ -777,6 +833,7 @@
             Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(panel1);
+            MainMenuStrip = menuStrip1;
             Name = "Form1";
             Text = "KTCM";
             WindowState = FormWindowState.Maximized;
@@ -785,6 +842,8 @@
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -843,8 +902,15 @@
         private Label label15;
         private Label label16;
         private Label label17;
-        private ComboBox comboBox1;
         private TextBox textBox1;
         private DataGridView dataGridView2;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem toolStripMenuItem1;
+        private ToolStripMenuItem toolStripMenuItem2;
+        private ToolStripMenuItem toolStripMenuItem3;
+        private ToolStripMenuItem toolStripMenuItem4;
+        private ToolStripMenuItem toolStripMenuItem5;
+        private ToolStripMenuItem toolStripMenuItem6;
+        private ToolStripMenuItem toolStripMenuItem7;
     }
 }
