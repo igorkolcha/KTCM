@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "D:\\Cod\\GitRepos\\KTCM\\KTCM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{10CFB21D-1812-DEFF-F3CF-375D5B51A293}|KTCM\\KTCM.csproj|D:\\Cod\\GitRepos\\KTCM\\KTCM\\ktcm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{10CFB21D-1812-DEFF-F3CF-375D5B51A293}|KTCM\\KTCM.csproj|d:\\cod\\gitrepos\\ktcm\\ktcm\\ktcm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{10CFB21D-1812-DEFF-F3CF-375D5B51A293}|KTCM\\KTCM.csproj|solutionrelative:ktcm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -56,7 +56,7 @@
               "RelativeDocumentMoniker": "KTCM\\Form1.Designer.cs",
               "ToolTip": "D:\\Cod\\GitRepos\\KTCM\\KTCM\\KTCM\\Form1.Designer.cs*",
               "RelativeToolTip": "KTCM\\Form1.Designer.cs*",
-              "ViewState": "AgIAAJsAAAAAAAAAAAAawLEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAawIwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-10T17:17:57.388Z",
               "EditorCaption": ""
@@ -81,7 +81,7 @@
               "RelativeDocumentMoniker": "KTCM\\Form1.cs",
               "ToolTip": "D:\\Cod\\GitRepos\\KTCM\\KTCM\\KTCM\\Form1.cs*",
               "RelativeToolTip": "KTCM\\Form1.cs*",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAowIwAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAJcAAAAAAAAAAAA0wKkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-30T19:02:27.788Z",
               "EditorCaption": ""

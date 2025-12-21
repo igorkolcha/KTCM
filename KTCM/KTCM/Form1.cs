@@ -33,7 +33,7 @@ namespace KTCM
         private int y = 25;
         // Отступы справа и снизу
         private int marginRight = 20;
-        private int marginBottom = 40;
+        private int marginBottom = 25;
 
         protected override void OnPaint(PaintEventArgs e)
         {
@@ -109,6 +109,7 @@ namespace KTCM
                         dataGridView.DataSource = dataSet.Tables[0];
                         dataGridView.RowHeadersVisible = false;
                         //dataGridView.Visible = true;
+                        //dataGridView.AllowUserToAddRows = true;
                     }
                     catch (SQLiteException ex)
                     {
@@ -146,6 +147,53 @@ namespace KTCM
             {
                 dataGridView1.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.Fill);
             };
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Проверяем, что клик по реальной ячейке
+            if (e.RowIndex < 0 || e.ColumnIndex < 0)
+                return;
+
+            var cell = dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex];
+            var value = cell.Value?.ToString() ?? string.Empty;
+
+            groupBox1.Visible = true;
+
+            textBox_GroupBox1.Visible = false;
+            label_GroupBox1_Text.Text = "удалить";
+            label_GroupBox1.Text = dataGridView1.CurrentCell.Value.ToString();
+            label_GroupBox1.Visible = true;
+
+            bool hasText = !string.IsNullOrWhiteSpace(value);
+
+            button_GroupBox1_Delete.Visible = hasText;
+            button_GroupBox1_Exit.Visible = hasText;
+            button_GroupBox1_Save.Visible = !hasText;
+            textBox_GroupBox1.Visible = !hasText;
+        }
+
+        private void button_GroupBox1_Exit_Click(object sender, EventArgs e)
+        {
+            groupBox1.Visible = false;
+        }
+
+        private void textBox1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            groupBox1.Visible = true;
+
+            textBox_GroupBox1.Visible = true;
+            label_GroupBox1.Visible = false;
+            label_GroupBox1_Text.Text = "введите фамилию";
+
+            button_GroupBox1_Delete.Visible = false;
+            button_GroupBox1_Exit.Visible = true;
+            button_GroupBox1_Save.Visible = true;
+            textBox_GroupBox1.Visible = true;
         }
     }
 }

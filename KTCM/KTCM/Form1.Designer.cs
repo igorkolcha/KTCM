@@ -92,10 +92,18 @@
             label15 = new Label();
             label16 = new Label();
             label17 = new Label();
+            groupBox1 = new GroupBox();
+            label_GroupBox1_Text = new Label();
+            label_GroupBox1 = new Label();
+            textBox_GroupBox1 = new TextBox();
+            button_GroupBox1_Delete = new Button();
+            button_GroupBox1_Exit = new Button();
+            button_GroupBox1_Save = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             menuStrip1.SuspendLayout();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -107,16 +115,16 @@
             panel1.Controls.Add(menuStrip1);
             panel1.Location = new Point(16, 22);
             panel1.Name = "panel1";
-            panel1.Size = new Size(245, 632);
+            panel1.Size = new Size(245, 647);
             panel1.TabIndex = 2;
             // 
             // dataGridView2
             // 
             dataGridView2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(1, 333);
+            dataGridView2.Location = new Point(1, 428);
             dataGridView2.Name = "dataGridView2";
-            dataGridView2.Size = new Size(244, 295);
+            dataGridView2.Size = new Size(244, 216);
             dataGridView2.TabIndex = 4;
             // 
             // textBox1
@@ -130,6 +138,7 @@
             textBox1.TabIndex = 3;
             textBox1.Text = "Исполнители";
             textBox1.TextAlign = HorizontalAlignment.Center;
+            textBox1.MouseDoubleClick += textBox1_MouseDoubleClick;
             // 
             // dataGridView1
             // 
@@ -151,10 +160,12 @@
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
             dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            dataGridView1.Location = new Point(0, 31);
+            dataGridView1.Location = new Point(0, 30);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(245, 274);
+            dataGridView1.Size = new Size(245, 372);
             dataGridView1.TabIndex = 1;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            dataGridView1.CellContentDoubleClick += dataGridView1_CellContentDoubleClick;
             // 
             // menuStrip1
             // 
@@ -163,7 +174,7 @@
             menuStrip1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
             menuStrip1.ImageScalingSize = new Size(30, 30);
             menuStrip1.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1 });
-            menuStrip1.Location = new Point(1, 303);
+            menuStrip1.Location = new Point(1, 403);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(251, 27);
             menuStrip1.TabIndex = 5;
@@ -777,11 +788,85 @@
             label17.TabIndex = 52;
             label17.Text = "46.08";
             // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(label_GroupBox1_Text);
+            groupBox1.Controls.Add(label_GroupBox1);
+            groupBox1.Controls.Add(textBox_GroupBox1);
+            groupBox1.Controls.Add(button_GroupBox1_Delete);
+            groupBox1.Controls.Add(button_GroupBox1_Exit);
+            groupBox1.Controls.Add(button_GroupBox1_Save);
+            groupBox1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            groupBox1.Location = new Point(275, 18);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(289, 173);
+            groupBox1.TabIndex = 53;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Редактировать";
+            groupBox1.Visible = false;
+            // 
+            // label_GroupBox1_Text
+            // 
+            label_GroupBox1_Text.AutoSize = true;
+            label_GroupBox1_Text.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label_GroupBox1_Text.ForeColor = Color.Blue;
+            label_GroupBox1_Text.Location = new Point(28, 26);
+            label_GroupBox1_Text.Name = "label_GroupBox1_Text";
+            label_GroupBox1_Text.Size = new Size(85, 19);
+            label_GroupBox1_Text.TabIndex = 5;
+            label_GroupBox1_Text.Text = "удалить !!!";
+            // 
+            // label_GroupBox1
+            // 
+            label_GroupBox1.AutoSize = true;
+            label_GroupBox1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label_GroupBox1.Location = new Point(187, 26);
+            label_GroupBox1.Name = "label_GroupBox1";
+            label_GroupBox1.Size = new Size(53, 19);
+            label_GroupBox1.TabIndex = 4;
+            label_GroupBox1.Text = "label18";
+            // 
+            // textBox_GroupBox1
+            // 
+            textBox_GroupBox1.Location = new Point(171, 22);
+            textBox_GroupBox1.Name = "textBox_GroupBox1";
+            textBox_GroupBox1.Size = new Size(112, 26);
+            textBox_GroupBox1.TabIndex = 3;
+            // 
+            // button_GroupBox1_Delete
+            // 
+            button_GroupBox1_Delete.Location = new Point(28, 121);
+            button_GroupBox1_Delete.Name = "button_GroupBox1_Delete";
+            button_GroupBox1_Delete.Size = new Size(100, 32);
+            button_GroupBox1_Delete.TabIndex = 2;
+            button_GroupBox1_Delete.Text = "Удалить";
+            button_GroupBox1_Delete.UseVisualStyleBackColor = true;
+            // 
+            // button_GroupBox1_Exit
+            // 
+            button_GroupBox1_Exit.Location = new Point(162, 121);
+            button_GroupBox1_Exit.Name = "button_GroupBox1_Exit";
+            button_GroupBox1_Exit.Size = new Size(100, 32);
+            button_GroupBox1_Exit.TabIndex = 1;
+            button_GroupBox1_Exit.Text = "Выход";
+            button_GroupBox1_Exit.UseVisualStyleBackColor = true;
+            button_GroupBox1_Exit.Click += button_GroupBox1_Exit_Click;
+            // 
+            // button_GroupBox1_Save
+            // 
+            button_GroupBox1_Save.Location = new Point(28, 121);
+            button_GroupBox1_Save.Name = "button_GroupBox1_Save";
+            button_GroupBox1_Save.Size = new Size(102, 32);
+            button_GroupBox1_Save.TabIndex = 0;
+            button_GroupBox1_Save.Text = "Сохранить";
+            button_GroupBox1_Save.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1484, 691);
+            Controls.Add(groupBox1);
             Controls.Add(label17);
             Controls.Add(label16);
             Controls.Add(label15);
@@ -844,6 +929,8 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -912,5 +999,13 @@
         private ToolStripMenuItem toolStripMenuItem5;
         private ToolStripMenuItem toolStripMenuItem6;
         private ToolStripMenuItem toolStripMenuItem7;
+        private GroupBox groupBox1;
+        //private Button button34;
+        private Button button_GroupBox1_Save;
+        private Button button_GroupBox1_Exit;
+        private Button button_GroupBox1_Delete;
+        private TextBox textBox_GroupBox1;
+        private Label label_GroupBox1;
+        private Label label_GroupBox1_Text;
     }
 }
