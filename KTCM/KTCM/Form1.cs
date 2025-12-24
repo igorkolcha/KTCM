@@ -82,63 +82,12 @@ namespace KTCM
         }
         #endregion
 
-        #region database connection method Connection
-        static string connectionString = @"Data Source=ктсм.db;Version=3;";
-        public static void Connection(DataGridView dataGridView, string stringQuery)
-        {
-            using (SQLiteConnection connection = new SQLiteConnection(connectionString))
-            {
-                try
-                {
-                    connection.Open();
-                }
-                catch (SQLiteException ex)
-                {
-                    MessageBox.Show($"Ошибка подключения к базе данных SQLite: {ex.Message}");
-                    return; // Выходим из метода, если нет подключения
-                }
-                using (SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter(stringQuery, connection))
-                {
-                    try
-                    {
-                        DataSet dataSet = new DataSet();
-                        dataAdapter.Fill(dataSet);
-
-                        // Настройка DataGridView
-                        dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
-                        dataGridView.DataSource = dataSet.Tables[0];
-                        dataGridView.RowHeadersVisible = false;
-                        //dataGridView.Visible = true;
-                        //dataGridView.AllowUserToAddRows = true;
-                    }
-                    catch (SQLiteException ex)
-                    {
-                        // Обработка ошибок при выполнении запроса
-                        MessageBox.Show($"Ошибка выполнения запроса SQLite: {ex.Message}");
-                    }
-                    catch (Exception ex)
-                    {
-                        // Общая обработка других ошибок
-                        MessageBox.Show($"Произошла ошибка: {ex.Message}");
-                    }
-                    finally
-                    {
-                        // Соединение будет закрыто автоматически благодаря using,
-                        // но явный вызов connection.Close() внутри finally, как у вас было,
-                        // не нужен, но и не повредит, если вы решите убрать using.
-                        // В данном случае 'using' гарантирует вызов Dispose(), который закроет соединение.
-                        // connection.Close(); // Необязательно при использовании `using` для connection
-                    }
-                }
-            }
-        }
-        #endregion
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Connection(dataGridView1, "SELECT фамилия FROM шн");
+            ConnectionDataBase.Connection(dataGridView1, "SELECT фамилия FROM шн");
 
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            /*dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             //dataGridView1.Columns["фамилия"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridView1.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
@@ -146,7 +95,7 @@ namespace KTCM
             this.Resize += (s, args) =>
             {
                 dataGridView1.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.Fill);
-            };
+            };*/
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -165,8 +114,8 @@ namespace KTCM
             groupBox1.Visible = true;
 
             textBox_GroupBox1.Visible = false;
-            label_GroupBox1_Text.Text = "удалить";
-            label_GroupBox1.Text = dataGridView1.CurrentCell.Value.ToString();
+            label_GroupBox1_Text.Text = "удалить фамилию";
+            label_GroupBox1.Text = value;
             label_GroupBox1.Visible = true;
 
             bool hasText = !string.IsNullOrWhiteSpace(value);
@@ -194,6 +143,23 @@ namespace KTCM
             button_GroupBox1_Exit.Visible = true;
             button_GroupBox1_Save.Visible = true;
             textBox_GroupBox1.Visible = true;
+        }
+
+        private void button_GroupBox1_Delete_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.DeleteEmployee(dataGridView1, label_GroupBox1);
+
+            ConnectionDataBase.Connection(dataGridView1, "SELECT фамилия FROM шн");
+
+
+        }
+
+        private void button_GroupBox1_Save_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.AddEmployee(textBox_GroupBox1);
+            textBox_GroupBox1.Text = "";
+
+            ConnectionDataBase.Connection(dataGridView1, "SELECT фамилия FROM шн");
         }
     }
 }

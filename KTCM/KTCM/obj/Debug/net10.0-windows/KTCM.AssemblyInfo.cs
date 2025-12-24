@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KTCM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6cdeafec035c68eb087581103cf0f22e9275f5d3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cbf49ef038bdea05cebb162434c12315ad411d1e")]
 [assembly: System.Reflection.AssemblyProductAttribute("KTCM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KTCM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

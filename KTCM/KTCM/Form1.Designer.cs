@@ -835,12 +835,13 @@
             // 
             // button_GroupBox1_Delete
             // 
-            button_GroupBox1_Delete.Location = new Point(28, 121);
+            button_GroupBox1_Delete.Location = new Point(29, 120);
             button_GroupBox1_Delete.Name = "button_GroupBox1_Delete";
             button_GroupBox1_Delete.Size = new Size(100, 32);
             button_GroupBox1_Delete.TabIndex = 2;
             button_GroupBox1_Delete.Text = "Удалить";
             button_GroupBox1_Delete.UseVisualStyleBackColor = true;
+            button_GroupBox1_Delete.Click += button_GroupBox1_Delete_Click;
             // 
             // button_GroupBox1_Exit
             // 
@@ -860,6 +861,7 @@
             button_GroupBox1_Save.TabIndex = 0;
             button_GroupBox1_Save.Text = "Сохранить";
             button_GroupBox1_Save.UseVisualStyleBackColor = true;
+            button_GroupBox1_Save.Click += button_GroupBox1_Save_Click;
             // 
             // Form1
             // 
