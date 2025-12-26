@@ -72,7 +72,6 @@ namespace KTCM
         }
         #endregion
 
-
         #region method DeleteEmployee
         public static void DeleteEmployee(DataGridView dataGridView, System.Windows.Forms.Label label)
         {

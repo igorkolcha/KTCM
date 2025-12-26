@@ -99,11 +99,13 @@
             button_GroupBox1_Delete = new Button();
             button_GroupBox1_Exit = new Button();
             button_GroupBox1_Save = new Button();
+            dataGridView3 = new DataGridView();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             menuStrip1.SuspendLayout();
             groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView3).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -191,38 +193,44 @@
             // toolStripMenuItem2
             // 
             toolStripMenuItem2.Name = "toolStripMenuItem2";
-            toolStripMenuItem2.Size = new Size(136, 24);
+            toolStripMenuItem2.Size = new Size(180, 24);
             toolStripMenuItem2.Text = "Январь";
+            toolStripMenuItem2.Click += toolStripMenuItem2_Click;
             // 
             // toolStripMenuItem3
             // 
             toolStripMenuItem3.Name = "toolStripMenuItem3";
-            toolStripMenuItem3.Size = new Size(136, 24);
+            toolStripMenuItem3.Size = new Size(180, 24);
             toolStripMenuItem3.Text = "Февраль";
+            toolStripMenuItem3.Click += toolStripMenuItem3_Click;
             // 
             // toolStripMenuItem4
             // 
             toolStripMenuItem4.Name = "toolStripMenuItem4";
-            toolStripMenuItem4.Size = new Size(136, 24);
+            toolStripMenuItem4.Size = new Size(180, 24);
             toolStripMenuItem4.Text = "Март";
+            toolStripMenuItem4.Click += toolStripMenuItem4_Click;
             // 
             // toolStripMenuItem5
             // 
             toolStripMenuItem5.Name = "toolStripMenuItem5";
-            toolStripMenuItem5.Size = new Size(136, 24);
+            toolStripMenuItem5.Size = new Size(180, 24);
             toolStripMenuItem5.Text = "Апрель";
+            toolStripMenuItem5.Click += toolStripMenuItem5_Click;
             // 
             // toolStripMenuItem6
             // 
             toolStripMenuItem6.Name = "toolStripMenuItem6";
-            toolStripMenuItem6.Size = new Size(136, 24);
+            toolStripMenuItem6.Size = new Size(180, 24);
             toolStripMenuItem6.Text = "Май";
+            toolStripMenuItem6.Click += toolStripMenuItem6_Click;
             // 
             // toolStripMenuItem7
             // 
             toolStripMenuItem7.Name = "toolStripMenuItem7";
-            toolStripMenuItem7.Size = new Size(136, 24);
+            toolStripMenuItem7.Size = new Size(180, 24);
             toolStripMenuItem7.Text = "Июнь";
+            toolStripMenuItem7.Click += toolStripMenuItem7_Click;
             // 
             // label1
             // 
@@ -863,11 +871,21 @@
             button_GroupBox1_Save.UseVisualStyleBackColor = true;
             button_GroupBox1_Save.Click += button_GroupBox1_Save_Click;
             // 
+            // dataGridView3
+            // 
+            dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView3.Location = new Point(285, 516);
+            dataGridView3.Name = "dataGridView3";
+            dataGridView3.Size = new Size(63, 77);
+            dataGridView3.TabIndex = 54;
+            dataGridView3.Visible = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1484, 691);
+            Controls.Add(dataGridView3);
             Controls.Add(groupBox1);
             Controls.Add(label17);
             Controls.Add(label16);
@@ -933,6 +951,7 @@
             menuStrip1.PerformLayout();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1009,5 +1028,6 @@
         private TextBox textBox_GroupBox1;
         private Label label_GroupBox1;
         private Label label_GroupBox1_Text;
+        private DataGridView dataGridView3;
     }
 }
