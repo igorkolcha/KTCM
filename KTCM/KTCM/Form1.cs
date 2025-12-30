@@ -150,8 +150,6 @@ namespace KTCM
             ConnectionDataBase.DeleteEmployee(dataGridView1, label_GroupBox1);
 
             ConnectionDataBase.Connection(dataGridView1, "SELECT фамилия FROM шн");
-
-
         }
 
         private void button_GroupBox1_Save_Click(object sender, EventArgs e)
@@ -162,40 +160,82 @@ namespace KTCM
             ConnectionDataBase.Connection(dataGridView1, "SELECT фамилия FROM шн");
         }
 
+        #region toolStripMenuItem
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            DataGridToExcel.DataGridDataTime(dataGridView3, "SELECT станции, фамилия, дата, начало, конец, ктсм FROM шн WHERE месяц = '1'");
+            DataGridToExcel.DataGridDataTime(dataGridView3, "SELECT станции, фамилия, дата, начало, конец, ктсм FROM ктсм WHERE месяц = '1'");
             DataGridToExcel.DataGridViewToExcel(dataGridView3);
         }
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            DataGridToExcel.DataGridDataTime(dataGridView3, "SELECT станции, фамилия, дата, начало, конец, ктсм FROM шн WHERE месяц = '2'");
+            DataGridToExcel.DataGridDataTime(dataGridView3, "SELECT станции, фамилия, дата, начало, конец, ктсм FROM ктсм WHERE месяц = '2'");
             DataGridToExcel.DataGridViewToExcel(dataGridView3);
         }
 
         private void toolStripMenuItem4_Click(object sender, EventArgs e)
         {
-            DataGridToExcel.DataGridDataTime(dataGridView3, "SELECT станции, фамилия, дата, начало, конец, ктсм FROM шн WHERE месяц = '3'");
+            DataGridToExcel.DataGridDataTime(dataGridView3, "SELECT станции, фамилия, дата, начало, конец, ктсм FROM ктсм WHERE месяц = '3'");
             DataGridToExcel.DataGridViewToExcel(dataGridView3);
         }
 
         private void toolStripMenuItem5_Click(object sender, EventArgs e)
         {
-            DataGridToExcel.DataGridDataTime(dataGridView3, "SELECT станции, фамилия, дата, начало, конец, ктсм FROM шн WHERE месяц = '4'");
+            DataGridToExcel.DataGridDataTime(dataGridView3, "SELECT станции, фамилия, дата, начало, конец, ктсм FROM ктсм WHERE месяц = '4'");
             DataGridToExcel.DataGridViewToExcel(dataGridView3);
         }
 
         private void toolStripMenuItem6_Click(object sender, EventArgs e)
         {
-            DataGridToExcel.DataGridDataTime(dataGridView3, "SELECT станции, фамилия, дата, начало, конец, ктсм FROM шн WHERE месяц = '5'");
+            DataGridToExcel.DataGridDataTime(dataGridView3, "SELECT станции, фамилия, дата, начало, конец, ктсм FROM ктсм WHERE месяц = '5'");
             DataGridToExcel.DataGridViewToExcel(dataGridView3);
         }
 
         private void toolStripMenuItem7_Click(object sender, EventArgs e)
         {
-            DataGridToExcel.DataGridDataTime(dataGridView3, "SELECT станции, фамилия, дата, начало, конец, ктсм FROM шн WHERE месяц = '6'");
+            DataGridToExcel.DataGridDataTime(dataGridView3, "SELECT станции, фамилия, дата, начало, конец, ктсм FROM ктсм WHERE месяц = '6'");
             DataGridToExcel.DataGridViewToExcel(dataGridView3);
+        }
+
+        private void toolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            DataGridToExcel.DataGridDataTime(dataGridView3, "SELECT станции, фамилия, дата, начало, конец, ктсм FROM ктсм WHERE месяц = '7'");
+            DataGridToExcel.DataGridViewToExcel(dataGridView3);
+        }
+        private void toolStripMenuItem9_Click(object sender, EventArgs e)
+        {
+            DataGridToExcel.DataGridDataTime(dataGridView3, "SELECT станции, фамилия, дата, начало, конец, ктсм FROM ктсм WHERE месяц = '8'");
+            DataGridToExcel.DataGridViewToExcel(dataGridView3);
+        }
+        private void toolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            DataGridToExcel.DataGridDataTime(dataGridView3, "SELECT станции, фамилия, дата, начало, конец, ктсм FROM ктсм WHERE месяц = '9'");
+            DataGridToExcel.DataGridViewToExcel(dataGridView3);
+        }
+
+        private void toolStripMenuItem11_Click(object sender, EventArgs e)
+        {
+            DataGridToExcel.DataGridDataTime(dataGridView3, "SELECT станции, фамилия, дата, начало, конец, ктсм FROM ктсм WHERE месяц = '10'");
+            DataGridToExcel.DataGridViewToExcel(dataGridView3);
+        }
+
+        private void toolStripMenuItem12_Click(object sender, EventArgs e)
+        {
+            DataGridToExcel.DataGridDataTime(dataGridView3, "SELECT станции, фамилия, дата, начало, конец, ктсм FROM ктсм WHERE месяц = '11'");
+            DataGridToExcel.DataGridViewToExcel(dataGridView3);
+        }
+
+        private void toolStripMenuItem13_Click(object sender, EventArgs e)
+        {
+            DataGridToExcel.DataGridDataTime(dataGridView3, "SELECT станции, фамилия, дата, начало, конец, ктсм FROM ктсм WHERE месяц = '12'");
+            DataGridToExcel.DataGridViewToExcel(dataGridView3);
+        }
+        #endregion
+
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.BeginWork(button5, dateTimePicker1, dataGridView1);
         }
     }
 }

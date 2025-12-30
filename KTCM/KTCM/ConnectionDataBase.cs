@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Microsoft.Office.Interop.Excel;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SQLite;
+using System.Linq.Expressions;
 using System.Reflection.Emit;
 using System.Text;
 using System.Windows.Forms;
@@ -119,7 +121,7 @@ namespace KTCM
         #endregion
 
         #region method AddEmployee
-        public static void AddEmployee(TextBox textBox)
+        public static void AddEmployee(System.Windows.Forms.TextBox textBox)
         {
             if (textBox == null || string.IsNullOrWhiteSpace(textBox.Text))
             {
@@ -131,10 +133,105 @@ namespace KTCM
             using var conn = new SQLiteConnection(connectionString);
             using var cmd = new SQLiteCommand(insert, conn);
             cmd.Parameters.AddWithValue("@фамилия", textBox.Text);
-                   conn.Open();
+            conn.Open();
             cmd.ExecuteNonQuery();
+        }
+        #endregion
+
+        #region method BeginWork
+        public static void BeginWork(System.Windows.Forms.Button button, DateTimePicker dateTimePicker, DataGridView dataGridView)
+        {
+            string[] ktsmArray = { "лучеса", "чепино", "гродок чет", "городок неч" };
+
+            string ktsm;
+
+            if (Array.IndexOf(ktsmArray, button.Text) >= 0)
+            {
+                ktsm = "ктсм1д";
+            }
+            else
+                ktsm = "ктсм2";
+
+            /*string insert = @"INSERT INTO шн (дата, станции, фамилия, начало, месяц, ктсм) 
+                               VALUES (@дата, @станции, @фамилия, @начало, @месяц, @ктсм)";
+            using var conn = new SQLiteConnection(connectionString);
+            using var cmd = new SQLiteCommand(insert, conn);
+            cmd.Parameters.Add("@дата", DbType.String).Value = dateTimePicker.Value.ToShortDateString();
+            cmd.Parameters.Add("@станции", DbType.String).Value = button.Text;
+            cmd.Parameters.Add("@фамилия", DbType.String).Value = dataGridView.CurrentCell?.Value?.ToString();
+            cmd.Parameters.Add("@начало", DbType.String).Value = DateTime.Now.ToShortTimeString();
+            cmd.Parameters.Add("@месяц", DbType.Int32).Value = dateTimePicker.Value.Month;
+            cmd.Parameters.Add("@ктсм", DbType.String).Value = ktsm;
+            conn.Open();
+            cmd.ExecuteNonQuery();
+
+            int countENQ = cmd.ExecuteNonQuery();
+            //int count = dataAdapter.Update(dataTable);
+            MessageBox.Show("Начало работ на КТСМ в " + DateTime.Now.ToShortTimeString(),
+                "Изменено записей: " + countENQ);*/
+            using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+                }
+                catch (SQLiteException ex)
+                {
+                    MessageBox.Show($"Нет подключения к базе данных {ex.Message}");
+                }
+                using (SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter())
+                {
+                    try
+                    {
+                        //DataTable dataTable = new DataTable("ктсм");
+                        SQLiteCommand command = connection.CreateCommand();
+                        command.CommandText = "INSERT INTO ктсм (дата, станции, фамилия, начало, месяц, ктсм) " +
+                            "VALUES ('" + dateTimePicker.Value.ToShortDateString() + "','" + button.Text + "','" +
+                            dataGridView.CurrentCell?.Value?.ToString() + "" + "','" + DateTime.Now.ToShortTimeString() + "','" +
+                            dateTimePicker.Value.Month + "', '" + ktsm + "')";
+
+                        int countENQ = command.ExecuteNonQuery();
+                        //int count = dataAdapter.Update(dataTable);
+                        MessageBox.Show("Начало работ на КТСМ в " + DateTime.Now.ToShortTimeString(),
+                            "Изменено записей: " + countENQ);
+                    }
+                    catch (SQLiteException ex)
+                    {
+                        MessageBox.Show($"Error: {ex.Message}");
+                    }
+                    connection.Close();
+                }
             }
         }
         #endregion
+
+        #region method EndWork
+        public static void EndWork(System.Windows.Forms.Button button, DateTimePicker dateTimePicker, string  stringQuery)
+        {
+            using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+                }
+                catch (SQLiteException ex) { MessageBox.Show($"Нет подключения к базе данных {ex.Message}"); }
+                using (SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter(stringQuery, connection))
+                {
+                    try
+                    {
+                        //DataTable dataTable = new DataTable("шн");
+                        SQLiteCommand command = connection.CreateCommand();
+                        command.CommandText = "UPDATE ктсм SET конец = '" + DateTime.Now.ToShortTimeString() + "'" +
+                            "WHERE станции ='" + button.Text + "' AND дата = '" + dateTimePicker.Value.ToShortDateString() + "'";
+
+                        int countEND = command.ExecuteNonQuery();
+                        MessageBox.Show("на ктсм работа закончена в " + DateTime.Now.ToShortTimeString(), "изменено записей: " + countEND);
+                    }
+                    catch (SQLiteException ex) { MessageBox.Show($"Error: {ex.Message}"); }
+                }
+            } 
+        }
+        #endregion
     }
+}
 

@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Cod\\GitRepos\\KTCM\\KTCM\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{10CFB21D-1812-DEFF-F3CF-375D5B51A293}|KTCM\\KTCM.csproj|d:\\cod\\gitrepos\\ktcm\\ktcm\\ktcm\\connectiondatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10CFB21D-1812-DEFF-F3CF-375D5B51A293}|KTCM\\KTCM.csproj|solutionrelative:ktcm\\connectiondatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{10CFB21D-1812-DEFF-F3CF-375D5B51A293}|KTCM\\KTCM.csproj|d:\\cod\\gitrepos\\ktcm\\ktcm\\ktcm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{10CFB21D-1812-DEFF-F3CF-375D5B51A293}|KTCM\\KTCM.csproj|solutionrelative:ktcm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{10CFB21D-1812-DEFF-F3CF-375D5B51A293}|KTCM\\KTCM.csproj|d:\\cod\\gitrepos\\ktcm\\ktcm\\ktcm\\datagridtoexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{10CFB21D-1812-DEFF-F3CF-375D5B51A293}|KTCM\\KTCM.csproj|solutionrelative:ktcm\\datagridtoexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10CFB21D-1812-DEFF-F3CF-375D5B51A293}|KTCM\\KTCM.csproj|d:\\cod\\gitrepos\\ktcm\\ktcm\\ktcm\\connectiondatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10CFB21D-1812-DEFF-F3CF-375D5B51A293}|KTCM\\KTCM.csproj|solutionrelative:ktcm\\connectiondatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,51 +54,50 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "DataGridToExcel.cs",
               "DocumentMoniker": "D:\\Cod\\GitRepos\\KTCM\\KTCM\\KTCM\\DataGridToExcel.cs",
               "RelativeDocumentMoniker": "KTCM\\DataGridToExcel.cs",
               "ToolTip": "D:\\Cod\\GitRepos\\KTCM\\KTCM\\KTCM\\DataGridToExcel.cs",
               "RelativeToolTip": "KTCM\\DataGridToExcel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAMcAAAAAAAAAAAAgwAUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-26T16:58:28.459Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-26T16:58:28.459Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "ConnectionDataBase.cs",
               "DocumentMoniker": "D:\\Cod\\GitRepos\\KTCM\\KTCM\\KTCM\\ConnectionDataBase.cs",
               "RelativeDocumentMoniker": "KTCM\\ConnectionDataBase.cs",
               "ToolTip": "D:\\Cod\\GitRepos\\KTCM\\KTCM\\KTCM\\ConnectionDataBase.cs",
               "RelativeToolTip": "KTCM\\ConnectionDataBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAANMAAAAAAAAAAAAcwN8AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-24T11:31:11.84Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "D:\\Cod\\GitRepos\\KTCM\\KTCM\\KTCM\\Form1.cs",
               "RelativeDocumentMoniker": "KTCM\\Form1.cs",
-              "ToolTip": "D:\\Cod\\GitRepos\\KTCM\\KTCM\\KTCM\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
-              "RelativeToolTip": "KTCM\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
+              "ToolTip": "D:\\Cod\\GitRepos\\KTCM\\KTCM\\KTCM\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "KTCM\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-10T17:12:50.867Z",
               "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\Cod\\GitRepos\\KTCM\\KTCM\\KTCM\\Form1.cs",
               "RelativeDocumentMoniker": "KTCM\\Form1.cs",
-              "ToolTip": "D:\\Cod\\GitRepos\\KTCM\\KTCM\\KTCM\\Form1.cs*",
-              "RelativeToolTip": "KTCM\\Form1.cs*",
-              "ViewState": "AgIAAKoAAAAAAAAAAAA9wMQAAACIAAAAAAAAAA==",
+              "ToolTip": "D:\\Cod\\GitRepos\\KTCM\\KTCM\\KTCM\\Form1.cs",
+              "RelativeToolTip": "KTCM\\Form1.cs",
+              "ViewState": "AgIAAMEAAAAAAAAAAAAUwOUAAAB5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-30T19:02:27.788Z",
               "EditorCaption": ""

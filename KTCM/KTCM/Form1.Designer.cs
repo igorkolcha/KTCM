@@ -42,6 +42,12 @@
             toolStripMenuItem5 = new ToolStripMenuItem();
             toolStripMenuItem6 = new ToolStripMenuItem();
             toolStripMenuItem7 = new ToolStripMenuItem();
+            toolStripMenuItem8 = new ToolStripMenuItem();
+            toolStripMenuItem9 = new ToolStripMenuItem();
+            toolStripMenuItem10 = new ToolStripMenuItem();
+            toolStripMenuItem11 = new ToolStripMenuItem();
+            toolStripMenuItem12 = new ToolStripMenuItem();
+            toolStripMenuItem13 = new ToolStripMenuItem();
             label1 = new Label();
             button1 = new Button();
             button2 = new Button();
@@ -117,7 +123,7 @@
             panel1.Controls.Add(menuStrip1);
             panel1.Location = new Point(16, 22);
             panel1.Name = "panel1";
-            panel1.Size = new Size(245, 647);
+            panel1.Size = new Size(245, 614);
             panel1.TabIndex = 2;
             // 
             // dataGridView2
@@ -126,7 +132,7 @@
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView2.Location = new Point(1, 428);
             dataGridView2.Name = "dataGridView2";
-            dataGridView2.Size = new Size(244, 216);
+            dataGridView2.Size = new Size(244, 183);
             dataGridView2.TabIndex = 4;
             // 
             // textBox1
@@ -184,7 +190,7 @@
             // 
             // toolStripMenuItem1
             // 
-            toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItem2, toolStripMenuItem3, toolStripMenuItem4, toolStripMenuItem5, toolStripMenuItem6, toolStripMenuItem7 });
+            toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItem2, toolStripMenuItem3, toolStripMenuItem4, toolStripMenuItem5, toolStripMenuItem6, toolStripMenuItem7, toolStripMenuItem8, toolStripMenuItem9, toolStripMenuItem10, toolStripMenuItem11, toolStripMenuItem12, toolStripMenuItem13 });
             toolStripMenuItem1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
             toolStripMenuItem1.Name = "toolStripMenuItem1";
             toolStripMenuItem1.Size = new Size(123, 23);
@@ -232,13 +238,55 @@
             toolStripMenuItem7.Text = "Июнь";
             toolStripMenuItem7.Click += toolStripMenuItem7_Click;
             // 
+            // toolStripMenuItem8
+            // 
+            toolStripMenuItem8.Name = "toolStripMenuItem8";
+            toolStripMenuItem8.Size = new Size(180, 24);
+            toolStripMenuItem8.Text = "Июль";
+            toolStripMenuItem8.Click += toolStripMenuItem8_Click;
+            // 
+            // toolStripMenuItem9
+            // 
+            toolStripMenuItem9.Name = "toolStripMenuItem9";
+            toolStripMenuItem9.Size = new Size(180, 24);
+            toolStripMenuItem9.Text = "Август";
+            toolStripMenuItem9.Click += toolStripMenuItem9_Click;
+            // 
+            // toolStripMenuItem10
+            // 
+            toolStripMenuItem10.Name = "toolStripMenuItem10";
+            toolStripMenuItem10.Size = new Size(180, 24);
+            toolStripMenuItem10.Text = "Сентябрь";
+            toolStripMenuItem10.Click += toolStripMenuItem10_Click;
+            // 
+            // toolStripMenuItem11
+            // 
+            toolStripMenuItem11.Name = "toolStripMenuItem11";
+            toolStripMenuItem11.Size = new Size(180, 24);
+            toolStripMenuItem11.Text = "Октябрь";
+            toolStripMenuItem11.Click += toolStripMenuItem11_Click;
+            // 
+            // toolStripMenuItem12
+            // 
+            toolStripMenuItem12.Name = "toolStripMenuItem12";
+            toolStripMenuItem12.Size = new Size(180, 24);
+            toolStripMenuItem12.Text = "Ноябрь";
+            toolStripMenuItem12.Click += toolStripMenuItem12_Click;
+            // 
+            // toolStripMenuItem13
+            // 
+            toolStripMenuItem13.Name = "toolStripMenuItem13";
+            toolStripMenuItem13.Size = new Size(180, 24);
+            toolStripMenuItem13.Text = "Декабрь";
+            toolStripMenuItem13.Click += toolStripMenuItem13_Click;
+            // 
             // label1
             // 
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
             label1.ForeColor = Color.Red;
-            label1.Location = new Point(827, 328);
+            label1.Location = new Point(827, 312);
             label1.Name = "label1";
             label1.Size = new Size(89, 24);
             label1.TabIndex = 3;
@@ -249,7 +297,7 @@
             button1.Anchor = AnchorStyles.None;
             button1.AutoSize = true;
             button1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button1.Location = new Point(733, 270);
+            button1.Location = new Point(733, 254);
             button1.Name = "button1";
             button1.Size = new Size(75, 30);
             button1.TabIndex = 4;
@@ -261,7 +309,7 @@
             button2.Anchor = AnchorStyles.None;
             button2.AutoSize = true;
             button2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button2.Location = new Point(732, 226);
+            button2.Location = new Point(732, 210);
             button2.Name = "button2";
             button2.Size = new Size(75, 30);
             button2.TabIndex = 5;
@@ -273,7 +321,7 @@
             button3.Anchor = AnchorStyles.None;
             button3.AutoSize = true;
             button3.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button3.Location = new Point(707, 352);
+            button3.Location = new Point(707, 336);
             button3.Name = "button3";
             button3.Size = new Size(81, 30);
             button3.TabIndex = 7;
@@ -285,7 +333,7 @@
             button4.Anchor = AnchorStyles.None;
             button4.AutoSize = true;
             button4.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button4.Location = new Point(708, 396);
+            button4.Location = new Point(708, 380);
             button4.Name = "button4";
             button4.Size = new Size(81, 30);
             button4.TabIndex = 6;
@@ -297,19 +345,20 @@
             button5.Anchor = AnchorStyles.None;
             button5.AutoSize = true;
             button5.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button5.Location = new Point(561, 253);
+            button5.Location = new Point(561, 237);
             button5.Name = "button5";
             button5.Size = new Size(123, 30);
             button5.TabIndex = 9;
             button5.Text = "Шумилино чет";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button6
             // 
             button6.Anchor = AnchorStyles.None;
             button6.AutoSize = true;
             button6.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button6.Location = new Point(562, 297);
+            button6.Location = new Point(562, 281);
             button6.Name = "button6";
             button6.Size = new Size(123, 30);
             button6.TabIndex = 8;
@@ -321,7 +370,7 @@
             button7.Anchor = AnchorStyles.None;
             button7.AutoSize = true;
             button7.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button7.Location = new Point(529, 352);
+            button7.Location = new Point(529, 336);
             button7.Name = "button7";
             button7.Size = new Size(124, 30);
             button7.TabIndex = 11;
@@ -333,7 +382,7 @@
             button8.Anchor = AnchorStyles.None;
             button8.AutoSize = true;
             button8.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button8.Location = new Point(530, 396);
+            button8.Location = new Point(530, 380);
             button8.Name = "button8";
             button8.Size = new Size(124, 30);
             button8.TabIndex = 10;
@@ -345,7 +394,7 @@
             button9.Anchor = AnchorStyles.None;
             button9.AutoSize = true;
             button9.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button9.Location = new Point(390, 253);
+            button9.Location = new Point(390, 237);
             button9.Name = "button9";
             button9.Size = new Size(93, 30);
             button9.TabIndex = 13;
@@ -357,7 +406,7 @@
             button10.Anchor = AnchorStyles.None;
             button10.AutoSize = true;
             button10.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button10.Location = new Point(391, 297);
+            button10.Location = new Point(391, 281);
             button10.Name = "button10";
             button10.Size = new Size(93, 30);
             button10.TabIndex = 12;
@@ -369,7 +418,7 @@
             button11.Anchor = AnchorStyles.None;
             button11.AutoSize = true;
             button11.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button11.Location = new Point(358, 352);
+            button11.Location = new Point(358, 336);
             button11.Name = "button11";
             button11.Size = new Size(94, 30);
             button11.TabIndex = 15;
@@ -381,7 +430,7 @@
             button12.Anchor = AnchorStyles.None;
             button12.AutoSize = true;
             button12.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button12.Location = new Point(359, 396);
+            button12.Location = new Point(359, 380);
             button12.Name = "button12";
             button12.Size = new Size(94, 30);
             button12.TabIndex = 14;
@@ -393,7 +442,7 @@
             button13.Anchor = AnchorStyles.None;
             button13.AutoSize = true;
             button13.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button13.Location = new Point(941, 253);
+            button13.Location = new Point(941, 237);
             button13.Name = "button13";
             button13.Size = new Size(75, 30);
             button13.TabIndex = 17;
@@ -405,7 +454,7 @@
             button14.Anchor = AnchorStyles.None;
             button14.AutoSize = true;
             button14.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button14.Location = new Point(942, 297);
+            button14.Location = new Point(942, 281);
             button14.Name = "button14";
             button14.Size = new Size(75, 30);
             button14.TabIndex = 16;
@@ -417,7 +466,7 @@
             button15.Anchor = AnchorStyles.None;
             button15.AutoSize = true;
             button15.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button15.Location = new Point(1047, 253);
+            button15.Location = new Point(1047, 237);
             button15.Name = "button15";
             button15.Size = new Size(101, 30);
             button15.TabIndex = 19;
@@ -429,7 +478,7 @@
             button16.Anchor = AnchorStyles.None;
             button16.AutoSize = true;
             button16.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button16.Location = new Point(1048, 297);
+            button16.Location = new Point(1048, 281);
             button16.Name = "button16";
             button16.Size = new Size(101, 30);
             button16.TabIndex = 18;
@@ -441,7 +490,7 @@
             button17.Anchor = AnchorStyles.None;
             button17.AutoSize = true;
             button17.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button17.Location = new Point(1213, 253);
+            button17.Location = new Point(1213, 237);
             button17.Name = "button17";
             button17.Size = new Size(102, 30);
             button17.TabIndex = 21;
@@ -453,7 +502,7 @@
             button18.Anchor = AnchorStyles.None;
             button18.AutoSize = true;
             button18.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button18.Location = new Point(1214, 297);
+            button18.Location = new Point(1214, 281);
             button18.Name = "button18";
             button18.Size = new Size(102, 30);
             button18.TabIndex = 20;
@@ -465,7 +514,7 @@
             button19.Anchor = AnchorStyles.None;
             button19.AutoSize = true;
             button19.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button19.Location = new Point(901, 394);
+            button19.Location = new Point(901, 378);
             button19.Name = "button19";
             button19.Size = new Size(91, 30);
             button19.TabIndex = 23;
@@ -477,7 +526,7 @@
             button20.Anchor = AnchorStyles.None;
             button20.AutoSize = true;
             button20.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button20.Location = new Point(901, 438);
+            button20.Location = new Point(901, 422);
             button20.Name = "button20";
             button20.Size = new Size(91, 30);
             button20.TabIndex = 22;
@@ -489,7 +538,7 @@
             button21.Anchor = AnchorStyles.None;
             button21.AutoSize = true;
             button21.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button21.Location = new Point(1049, 352);
+            button21.Location = new Point(1049, 336);
             button21.Name = "button21";
             button21.Size = new Size(102, 30);
             button21.TabIndex = 25;
@@ -501,7 +550,7 @@
             button22.Anchor = AnchorStyles.None;
             button22.AutoSize = true;
             button22.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button22.Location = new Point(1050, 396);
+            button22.Location = new Point(1050, 380);
             button22.Name = "button22";
             button22.Size = new Size(102, 30);
             button22.TabIndex = 24;
@@ -513,7 +562,7 @@
             button23.Anchor = AnchorStyles.None;
             button23.AutoSize = true;
             button23.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button23.Location = new Point(1176, 352);
+            button23.Location = new Point(1176, 336);
             button23.Name = "button23";
             button23.Size = new Size(103, 30);
             button23.TabIndex = 27;
@@ -525,7 +574,7 @@
             button24.Anchor = AnchorStyles.None;
             button24.AutoSize = true;
             button24.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button24.Location = new Point(1177, 396);
+            button24.Location = new Point(1177, 380);
             button24.Name = "button24";
             button24.Size = new Size(103, 30);
             button24.TabIndex = 26;
@@ -537,7 +586,7 @@
             button25.Anchor = AnchorStyles.None;
             button25.AutoSize = true;
             button25.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button25.Location = new Point(885, 539);
+            button25.Location = new Point(885, 523);
             button25.Name = "button25";
             button25.Size = new Size(143, 30);
             button25.TabIndex = 29;
@@ -549,7 +598,7 @@
             button26.Anchor = AnchorStyles.None;
             button26.AutoSize = true;
             button26.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button26.Location = new Point(885, 587);
+            button26.Location = new Point(885, 571);
             button26.Name = "button26";
             button26.Size = new Size(143, 30);
             button26.TabIndex = 28;
@@ -561,7 +610,7 @@
             button27.Anchor = AnchorStyles.None;
             button27.AutoSize = true;
             button27.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button27.Location = new Point(713, 516);
+            button27.Location = new Point(713, 500);
             button27.Name = "button27";
             button27.Size = new Size(144, 30);
             button27.TabIndex = 31;
@@ -573,7 +622,7 @@
             button28.Anchor = AnchorStyles.None;
             button28.AutoSize = true;
             button28.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button28.Location = new Point(713, 563);
+            button28.Location = new Point(713, 547);
             button28.Name = "button28";
             button28.Size = new Size(144, 30);
             button28.TabIndex = 30;
@@ -585,7 +634,7 @@
             button29.Anchor = AnchorStyles.None;
             button29.AutoSize = true;
             button29.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button29.Location = new Point(748, 43);
+            button29.Location = new Point(748, 27);
             button29.Name = "button29";
             button29.Size = new Size(109, 30);
             button29.TabIndex = 33;
@@ -597,7 +646,7 @@
             button30.Anchor = AnchorStyles.None;
             button30.AutoSize = true;
             button30.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button30.Location = new Point(749, 87);
+            button30.Location = new Point(749, 71);
             button30.Name = "button30";
             button30.Size = new Size(109, 30);
             button30.TabIndex = 32;
@@ -609,7 +658,7 @@
             button31.Anchor = AnchorStyles.None;
             button31.AutoSize = true;
             button31.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button31.Location = new Point(884, 86);
+            button31.Location = new Point(884, 70);
             button31.Name = "button31";
             button31.Size = new Size(108, 30);
             button31.TabIndex = 35;
@@ -621,7 +670,7 @@
             button32.Anchor = AnchorStyles.None;
             button32.AutoSize = true;
             button32.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button32.Location = new Point(885, 130);
+            button32.Location = new Point(885, 114);
             button32.Name = "button32";
             button32.Size = new Size(108, 30);
             button32.TabIndex = 34;
@@ -640,7 +689,7 @@
             // 
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
-            label2.Location = new Point(783, 19);
+            label2.Location = new Point(783, 3);
             label2.Name = "label2";
             label2.Size = new Size(40, 15);
             label2.TabIndex = 37;
@@ -650,7 +699,7 @@
             // 
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
-            label3.Location = new Point(919, 61);
+            label3.Location = new Point(919, 45);
             label3.Name = "label3";
             label3.Size = new Size(34, 15);
             label3.TabIndex = 38;
@@ -660,7 +709,7 @@
             // 
             label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
-            label4.Location = new Point(1245, 226);
+            label4.Location = new Point(1245, 210);
             label4.Name = "label4";
             label4.Size = new Size(46, 15);
             label4.TabIndex = 39;
@@ -670,7 +719,7 @@
             // 
             label5.Anchor = AnchorStyles.None;
             label5.AutoSize = true;
-            label5.Location = new Point(1205, 437);
+            label5.Location = new Point(1205, 421);
             label5.Name = "label5";
             label5.Size = new Size(46, 15);
             label5.TabIndex = 40;
@@ -680,7 +729,7 @@
             // 
             label6.Anchor = AnchorStyles.None;
             label6.AutoSize = true;
-            label6.Location = new Point(1076, 226);
+            label6.Location = new Point(1076, 210);
             label6.Name = "label6";
             label6.Size = new Size(46, 15);
             label6.TabIndex = 41;
@@ -690,7 +739,7 @@
             // 
             label7.Anchor = AnchorStyles.None;
             label7.AutoSize = true;
-            label7.Location = new Point(1079, 437);
+            label7.Location = new Point(1079, 421);
             label7.Name = "label7";
             label7.Size = new Size(46, 15);
             label7.TabIndex = 42;
@@ -700,7 +749,7 @@
             // 
             label8.Anchor = AnchorStyles.None;
             label8.AutoSize = true;
-            label8.Location = new Point(932, 368);
+            label8.Location = new Point(932, 352);
             label8.Name = "label8";
             label8.Size = new Size(34, 15);
             label8.TabIndex = 43;
@@ -710,7 +759,7 @@
             // 
             label9.Anchor = AnchorStyles.None;
             label9.AutoSize = true;
-            label9.Location = new Point(960, 226);
+            label9.Location = new Point(960, 210);
             label9.Name = "label9";
             label9.Size = new Size(46, 15);
             label9.TabIndex = 44;
@@ -720,7 +769,7 @@
             // 
             label10.Anchor = AnchorStyles.None;
             label10.AutoSize = true;
-            label10.Location = new Point(749, 199);
+            label10.Location = new Point(749, 183);
             label10.Name = "label10";
             label10.Size = new Size(46, 15);
             label10.TabIndex = 45;
@@ -730,7 +779,7 @@
             // 
             label11.Anchor = AnchorStyles.None;
             label11.AutoSize = true;
-            label11.Location = new Point(727, 437);
+            label11.Location = new Point(727, 421);
             label11.Name = "label11";
             label11.Size = new Size(40, 15);
             label11.TabIndex = 46;
@@ -740,7 +789,7 @@
             // 
             label12.Anchor = AnchorStyles.None;
             label12.AutoSize = true;
-            label12.Location = new Point(572, 437);
+            label12.Location = new Point(572, 421);
             label12.Name = "label12";
             label12.Size = new Size(46, 15);
             label12.TabIndex = 47;
@@ -750,7 +799,7 @@
             // 
             label13.Anchor = AnchorStyles.None;
             label13.AutoSize = true;
-            label13.Location = new Point(383, 437);
+            label13.Location = new Point(383, 421);
             label13.Name = "label13";
             label13.Size = new Size(46, 15);
             label13.TabIndex = 48;
@@ -760,7 +809,7 @@
             // 
             label14.Anchor = AnchorStyles.None;
             label14.AutoSize = true;
-            label14.Location = new Point(604, 226);
+            label14.Location = new Point(604, 210);
             label14.Name = "label14";
             label14.Size = new Size(46, 15);
             label14.TabIndex = 49;
@@ -770,7 +819,7 @@
             // 
             label15.Anchor = AnchorStyles.None;
             label15.AutoSize = true;
-            label15.Location = new Point(419, 226);
+            label15.Location = new Point(419, 210);
             label15.Name = "label15";
             label15.Size = new Size(46, 15);
             label15.TabIndex = 50;
@@ -780,7 +829,7 @@
             // 
             label16.Anchor = AnchorStyles.None;
             label16.AutoSize = true;
-            label16.Location = new Point(775, 493);
+            label16.Location = new Point(775, 477);
             label16.Name = "label16";
             label16.Size = new Size(19, 15);
             label16.TabIndex = 51;
@@ -790,7 +839,7 @@
             // 
             label17.Anchor = AnchorStyles.None;
             label17.AutoSize = true;
-            label17.Location = new Point(939, 517);
+            label17.Location = new Point(939, 501);
             label17.Name = "label17";
             label17.Size = new Size(34, 15);
             label17.TabIndex = 52;
@@ -884,7 +933,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1484, 691);
+            ClientSize = new Size(1484, 658);
             Controls.Add(dataGridView3);
             Controls.Add(groupBox1);
             Controls.Add(label17);
@@ -1029,5 +1078,11 @@
         private Label label_GroupBox1;
         private Label label_GroupBox1_Text;
         private DataGridView dataGridView3;
+        private ToolStripMenuItem toolStripMenuItem8;
+        private ToolStripMenuItem toolStripMenuItem9;
+        private ToolStripMenuItem toolStripMenuItem10;
+        private ToolStripMenuItem toolStripMenuItem11;
+        private ToolStripMenuItem toolStripMenuItem12;
+        private ToolStripMenuItem toolStripMenuItem13;
     }
 }
