@@ -206,7 +206,7 @@ namespace KTCM
         #endregion
 
         #region method EndWork
-        public static void EndWork(System.Windows.Forms.Button button, DateTimePicker dateTimePicker, string  stringQuery)
+        public static void EndWork(System.Windows.Forms.Button button, DateTimePicker dateTimePicker)
         {
             using (SQLiteConnection connection = new SQLiteConnection(connectionString))
             {
@@ -215,7 +215,7 @@ namespace KTCM
                     connection.Open();
                 }
                 catch (SQLiteException ex) { MessageBox.Show($"Нет подключения к базе данных {ex.Message}"); }
-                using (SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter(stringQuery, connection))
+                using (SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter())
                 {
                     try
                     {

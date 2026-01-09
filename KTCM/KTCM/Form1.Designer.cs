@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             panel1 = new Panel();
             dataGridView2 = new DataGridView();
             textBox1 = new TextBox();
@@ -150,24 +150,24 @@
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = SystemColors.Control;
-            dataGridViewCellStyle1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = SystemColors.Control;
+            dataGridViewCellStyle3.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.ColumnHeadersVisible = false;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = SystemColors.Window;
-            dataGridViewCellStyle2.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
-            dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = SystemColors.Window;
+            dataGridViewCellStyle4.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            dataGridViewCellStyle4.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.False;
+            dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
             dataGridView1.Location = new Point(0, 30);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(245, 372);
@@ -199,84 +199,84 @@
             // toolStripMenuItem2
             // 
             toolStripMenuItem2.Name = "toolStripMenuItem2";
-            toolStripMenuItem2.Size = new Size(180, 24);
+            toolStripMenuItem2.Size = new Size(142, 24);
             toolStripMenuItem2.Text = "Январь";
             toolStripMenuItem2.Click += toolStripMenuItem2_Click;
             // 
             // toolStripMenuItem3
             // 
             toolStripMenuItem3.Name = "toolStripMenuItem3";
-            toolStripMenuItem3.Size = new Size(180, 24);
+            toolStripMenuItem3.Size = new Size(142, 24);
             toolStripMenuItem3.Text = "Февраль";
             toolStripMenuItem3.Click += toolStripMenuItem3_Click;
             // 
             // toolStripMenuItem4
             // 
             toolStripMenuItem4.Name = "toolStripMenuItem4";
-            toolStripMenuItem4.Size = new Size(180, 24);
+            toolStripMenuItem4.Size = new Size(142, 24);
             toolStripMenuItem4.Text = "Март";
             toolStripMenuItem4.Click += toolStripMenuItem4_Click;
             // 
             // toolStripMenuItem5
             // 
             toolStripMenuItem5.Name = "toolStripMenuItem5";
-            toolStripMenuItem5.Size = new Size(180, 24);
+            toolStripMenuItem5.Size = new Size(142, 24);
             toolStripMenuItem5.Text = "Апрель";
             toolStripMenuItem5.Click += toolStripMenuItem5_Click;
             // 
             // toolStripMenuItem6
             // 
             toolStripMenuItem6.Name = "toolStripMenuItem6";
-            toolStripMenuItem6.Size = new Size(180, 24);
+            toolStripMenuItem6.Size = new Size(142, 24);
             toolStripMenuItem6.Text = "Май";
             toolStripMenuItem6.Click += toolStripMenuItem6_Click;
             // 
             // toolStripMenuItem7
             // 
             toolStripMenuItem7.Name = "toolStripMenuItem7";
-            toolStripMenuItem7.Size = new Size(180, 24);
+            toolStripMenuItem7.Size = new Size(142, 24);
             toolStripMenuItem7.Text = "Июнь";
             toolStripMenuItem7.Click += toolStripMenuItem7_Click;
             // 
             // toolStripMenuItem8
             // 
             toolStripMenuItem8.Name = "toolStripMenuItem8";
-            toolStripMenuItem8.Size = new Size(180, 24);
+            toolStripMenuItem8.Size = new Size(142, 24);
             toolStripMenuItem8.Text = "Июль";
             toolStripMenuItem8.Click += toolStripMenuItem8_Click;
             // 
             // toolStripMenuItem9
             // 
             toolStripMenuItem9.Name = "toolStripMenuItem9";
-            toolStripMenuItem9.Size = new Size(180, 24);
+            toolStripMenuItem9.Size = new Size(142, 24);
             toolStripMenuItem9.Text = "Август";
             toolStripMenuItem9.Click += toolStripMenuItem9_Click;
             // 
             // toolStripMenuItem10
             // 
             toolStripMenuItem10.Name = "toolStripMenuItem10";
-            toolStripMenuItem10.Size = new Size(180, 24);
+            toolStripMenuItem10.Size = new Size(142, 24);
             toolStripMenuItem10.Text = "Сентябрь";
             toolStripMenuItem10.Click += toolStripMenuItem10_Click;
             // 
             // toolStripMenuItem11
             // 
             toolStripMenuItem11.Name = "toolStripMenuItem11";
-            toolStripMenuItem11.Size = new Size(180, 24);
+            toolStripMenuItem11.Size = new Size(142, 24);
             toolStripMenuItem11.Text = "Октябрь";
             toolStripMenuItem11.Click += toolStripMenuItem11_Click;
             // 
             // toolStripMenuItem12
             // 
             toolStripMenuItem12.Name = "toolStripMenuItem12";
-            toolStripMenuItem12.Size = new Size(180, 24);
+            toolStripMenuItem12.Size = new Size(142, 24);
             toolStripMenuItem12.Text = "Ноябрь";
             toolStripMenuItem12.Click += toolStripMenuItem12_Click;
             // 
             // toolStripMenuItem13
             // 
             toolStripMenuItem13.Name = "toolStripMenuItem13";
-            toolStripMenuItem13.Size = new Size(180, 24);
+            toolStripMenuItem13.Size = new Size(142, 24);
             toolStripMenuItem13.Text = "Декабрь";
             toolStripMenuItem13.Click += toolStripMenuItem13_Click;
             // 
@@ -303,6 +303,7 @@
             button1.TabIndex = 4;
             button1.Text = "Чепино";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -315,6 +316,7 @@
             button2.TabIndex = 5;
             button2.Text = "Чепино";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -327,6 +329,7 @@
             button3.TabIndex = 7;
             button3.Text = "Гришаны";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -339,6 +342,7 @@
             button4.TabIndex = 6;
             button4.Text = "Гришаны";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
@@ -364,6 +368,7 @@
             button6.TabIndex = 8;
             button6.Text = "Шумилино чет";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // button7
             // 
@@ -376,6 +381,7 @@
             button7.TabIndex = 11;
             button7.Text = "Шумилино неч";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // button8
             // 
@@ -388,6 +394,7 @@
             button8.TabIndex = 10;
             button8.Text = "Шумилино неч";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // button9
             // 
@@ -400,6 +407,7 @@
             button9.TabIndex = 13;
             button9.Text = "Оболь чет";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
             // 
             // button10
             // 
@@ -412,6 +420,7 @@
             button10.TabIndex = 12;
             button10.Text = "Оболь чет";
             button10.UseVisualStyleBackColor = true;
+            button10.Click += button10_Click;
             // 
             // button11
             // 
@@ -424,6 +433,7 @@
             button11.TabIndex = 15;
             button11.Text = "Оболь неч";
             button11.UseVisualStyleBackColor = true;
+            button11.Click += button11_Click;
             // 
             // button12
             // 
@@ -436,6 +446,7 @@
             button12.TabIndex = 14;
             button12.Text = "Оболь неч";
             button12.UseVisualStyleBackColor = true;
+            button12.Click += button12_Click;
             // 
             // button13
             // 
@@ -448,6 +459,7 @@
             button13.TabIndex = 17;
             button13.Text = "Лучеса";
             button13.UseVisualStyleBackColor = true;
+            button13.Click += button13_Click;
             // 
             // button14
             // 
@@ -460,6 +472,7 @@
             button14.TabIndex = 16;
             button14.Text = "Лучеса";
             button14.UseVisualStyleBackColor = true;
+            button14.Click += button14_Click;
             // 
             // button15
             // 
@@ -472,6 +485,7 @@
             button15.TabIndex = 19;
             button15.Text = "Крынки чет";
             button15.UseVisualStyleBackColor = true;
+            button15.Click += button15_Click;
             // 
             // button16
             // 
@@ -484,6 +498,7 @@
             button16.TabIndex = 18;
             button16.Text = "Крынки чет";
             button16.UseVisualStyleBackColor = true;
+            button16.Click += button16_Click;
             // 
             // button17
             // 
@@ -496,6 +511,7 @@
             button17.TabIndex = 21;
             button17.Text = "Лиозно чет";
             button17.UseVisualStyleBackColor = true;
+            button17.Click += button17_Click;
             // 
             // button18
             // 
@@ -508,6 +524,7 @@
             button18.TabIndex = 20;
             button18.Text = "Лиозно чет";
             button18.UseVisualStyleBackColor = true;
+            button18.Click += button18_Click;
             // 
             // button19
             // 
@@ -520,6 +537,7 @@
             button19.TabIndex = 23;
             button19.Text = "Медведка";
             button19.UseVisualStyleBackColor = true;
+            button19.Click += button19_Click;
             // 
             // button20
             // 
@@ -532,6 +550,7 @@
             button20.TabIndex = 22;
             button20.Text = "Медведка";
             button20.UseVisualStyleBackColor = true;
+            button20.Click += button20_Click;
             // 
             // button21
             // 
@@ -544,6 +563,7 @@
             button21.TabIndex = 25;
             button21.Text = "Крынки неч";
             button21.UseVisualStyleBackColor = true;
+            button21.Click += button21_Click;
             // 
             // button22
             // 
@@ -556,6 +576,7 @@
             button22.TabIndex = 24;
             button22.Text = "Крынки неч";
             button22.UseVisualStyleBackColor = true;
+            button22.Click += button22_Click;
             // 
             // button23
             // 
@@ -568,6 +589,7 @@
             button23.TabIndex = 27;
             button23.Text = "Лиозно неч";
             button23.UseVisualStyleBackColor = true;
+            button23.Click += button23_Click;
             // 
             // button24
             // 
@@ -580,6 +602,7 @@
             button24.TabIndex = 26;
             button24.Text = "Лиозно неч";
             button24.UseVisualStyleBackColor = true;
+            button24.Click += button24_Click;
             // 
             // button25
             // 
@@ -592,6 +615,7 @@
             button25.TabIndex = 29;
             button25.Text = "Богушевская чет";
             button25.UseVisualStyleBackColor = true;
+            button25.Click += button25_Click;
             // 
             // button26
             // 
@@ -604,6 +628,7 @@
             button26.TabIndex = 28;
             button26.Text = "Богушевская чет";
             button26.UseVisualStyleBackColor = true;
+            button26.Click += button26_Click;
             // 
             // button27
             // 
@@ -616,6 +641,7 @@
             button27.TabIndex = 31;
             button27.Text = "Богушевская неч";
             button27.UseVisualStyleBackColor = true;
+            button27.Click += button27_Click;
             // 
             // button28
             // 
@@ -628,6 +654,7 @@
             button28.TabIndex = 30;
             button28.Text = "Богушевская неч";
             button28.UseVisualStyleBackColor = true;
+            button28.Click += button28_Click;
             // 
             // button29
             // 
@@ -640,6 +667,7 @@
             button29.TabIndex = 33;
             button29.Text = "Городок неч";
             button29.UseVisualStyleBackColor = true;
+            button29.Click += button29_Click;
             // 
             // button30
             // 
@@ -652,6 +680,7 @@
             button30.TabIndex = 32;
             button30.Text = "Городок неч";
             button30.UseVisualStyleBackColor = true;
+            button30.Click += button30_Click;
             // 
             // button31
             // 
@@ -664,6 +693,7 @@
             button31.TabIndex = 35;
             button31.Text = "Городок чет";
             button31.UseVisualStyleBackColor = true;
+            button31.Click += button31_Click;
             // 
             // button32
             // 
@@ -676,6 +706,7 @@
             button32.TabIndex = 34;
             button32.Text = "Городок чет";
             button32.UseVisualStyleBackColor = true;
+            button32.Click += button32_Click;
             // 
             // dateTimePicker1
             // 

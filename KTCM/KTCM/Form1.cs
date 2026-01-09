@@ -82,7 +82,6 @@ namespace KTCM
         }
         #endregion
 
-
         private void Form1_Load(object sender, EventArgs e)
         {
             ConnectionDataBase.Connection(dataGridView1, "SELECT фамилия FROM шн");
@@ -232,10 +231,166 @@ namespace KTCM
         }
         #endregion
 
-
+        #region ButtonClick
         private void button5_Click(object sender, EventArgs e)
         {
             ConnectionDataBase.BeginWork(button5, dateTimePicker1, dataGridView1);
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.EndWork(button6, dateTimePicker1);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.BeginWork(button2, dateTimePicker1, dataGridView1);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.EndWork(button1, dateTimePicker1);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.BeginWork(button3, dateTimePicker1, dataGridView1);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.EndWork(button4, dateTimePicker1);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.BeginWork(button7, dateTimePicker1, dataGridView1);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.EndWork(button8, dateTimePicker1);
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.BeginWork(button9, dateTimePicker1, dataGridView1);
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.EndWork(button10, dateTimePicker1);
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.BeginWork(button11, dateTimePicker1, dataGridView1);
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.EndWork(button12, dateTimePicker1);
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.BeginWork(button13, dateTimePicker1, dataGridView1);
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.EndWork(button14, dateTimePicker1);
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.BeginWork(button15, dateTimePicker1, dataGridView1);
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.EndWork(button16, dateTimePicker1);
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.BeginWork(button17, dateTimePicker1, dataGridView1);
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.EndWork(button18, dateTimePicker1);
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.BeginWork(button21, dateTimePicker1, dataGridView1);
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.EndWork(button22, dateTimePicker1);
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.BeginWork(button23, dateTimePicker1, dataGridView1);
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.EndWork(button24, dateTimePicker1);
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.BeginWork(button19, dateTimePicker1, dataGridView1);
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.EndWork(button20, dateTimePicker1);
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.BeginWork(button27, dateTimePicker1, dataGridView1);
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.EndWork(button28, dateTimePicker1);
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.BeginWork(button25, dateTimePicker1, dataGridView1);
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.EndWork(button26, dateTimePicker1);
+        }
+
+        private void button31_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.BeginWork(button31, dateTimePicker1, dataGridView1);
+        }
+
+        private void button32_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.EndWork(button32, dateTimePicker1);
+        }
+
+        private void button29_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.BeginWork(button29, dateTimePicker1, dataGridView1);
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            ConnectionDataBase.EndWork(button30, dateTimePicker1);
+        }
+        #endregion
     }
 }
