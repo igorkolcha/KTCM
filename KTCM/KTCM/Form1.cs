@@ -15,6 +15,51 @@ namespace KTCM
 
             this.BackColor = Color.Green;
 
+            button2.Click += BeginWorkClick;
+            button3.Click += BeginWorkClick;
+            button5.Click += BeginWorkClick;
+            button7.Click += BeginWorkClick;
+            button9.Click += BeginWorkClick;
+            button11.Click += BeginWorkClick;
+            button13.Click += BeginWorkClick;
+            button15.Click += BeginWorkClick;
+            button17.Click += BeginWorkClick;
+            button19.Click += BeginWorkClick;
+            button21.Click += BeginWorkClick;
+            button23.Click += BeginWorkClick;
+            button25.Click += BeginWorkClick;
+            button27.Click += BeginWorkClick;
+            button29.Click += BeginWorkClick;
+            button31.Click += BeginWorkClick;
+
+            button1.Click += EndWorkClick;
+            button4.Click += EndWorkClick;
+            button6.Click += EndWorkClick;
+            button8.Click += EndWorkClick;
+            button10.Click += EndWorkClick;
+            button12.Click += EndWorkClick;
+            button14.Click += EndWorkClick;
+            button16.Click += EndWorkClick;
+            button18.Click += EndWorkClick;
+            button20.Click += EndWorkClick;
+            button22.Click += EndWorkClick;
+            button24.Click += EndWorkClick;
+            button26.Click += EndWorkClick;
+            button28.Click += EndWorkClick;
+            button30.Click += EndWorkClick;
+            button32.Click += EndWorkClick;
+        }
+
+        private void BeginWorkClick(object? sender, EventArgs e)
+        {
+            if (sender is Button btn)
+                ConnectionDataBase.BeginWork(btn, dateTimePicker1, dataGridView1);
+        }
+
+        private void EndWorkClick(object? sender, EventArgs e)
+        {
+            if(sender is Button btn)
+                ConnectionDataBase.EndWork(btn, dateTimePicker1);
         }
 
         #region drawing on the form OnPaint Point2D
@@ -101,6 +146,7 @@ namespace KTCM
         {
 
         }
+
         private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             // Проверяем, что клик по реальной ячейке
@@ -232,7 +278,7 @@ namespace KTCM
         #endregion
 
         #region ButtonClick
-        private void button5_Click(object sender, EventArgs e)
+        /*private void button5_Click(object sender, EventArgs e)
         {
             ConnectionDataBase.BeginWork(button5, dateTimePicker1, dataGridView1);
         }
@@ -390,7 +436,7 @@ namespace KTCM
         private void button30_Click(object sender, EventArgs e)
         {
             ConnectionDataBase.EndWork(button30, dateTimePicker1);
-        }
+        }*/
         #endregion
     }
 }
